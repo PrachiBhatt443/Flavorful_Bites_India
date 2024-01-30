@@ -4,21 +4,18 @@
   }
 .logo{
    
-    height:180px;
-    width:180px;
+    height:100px;
+    width:240px;
 
   }
 nav{
     margin-top: 8px;
     margin-right: 177px;
     margin-left: 177px;
-    /* margin:177px; */
     display: flex;
     justify-content:space-between;
     align-items: center;
     font: 20px bold ;
-    /* height: 46px; */
-    /* width: 1440px; */
     height: 80px;
     flex-shrink: 0;
 }
@@ -37,49 +34,68 @@ nav ul li{
    color: white;
    background-color: red;
 }
-/* .Hug{
-    width: 1125px;
-    height: 613px;
+.card {
+    margin-top: 8px;
+    margin-right: 177px;
+    margin-left: 177px;
     display: flex;
-    margin-left:157px;
-    margin-top:152px; 
-     border: solid;
-} .imge{
-    width: 530px;
-   height: 487px;
-   border: solid; 
-   margin-top: 63px;
-
-} 
-.snow{
-    display:flex;
-    gap:40px;
-    border: solid; 
-    margin-bottom: 30px ;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 1085px;
+    height: 499px;
 }
-.red-btn{
-    background-color: #D01C28;
-    color: white;
-}
-
-.H3{
-width: 404px;
-height: 91px;
-font-family: Poppins;
-font-size: 16px;
-font-weight: 600;
-line-height: 24px;
-letter-spacing: 0em;
-text-align: left;
-color: #5A5959; 
-margin-top: 40px ;
-margin-bottom: 40px ;
-}
-h4
-.shop{
+.imagecontainer{
+    flex: 1;
     
+}
+.image {
+    width: 700px;
+    /* height: auto; */
+    height: 499px;
+}
+.image1 {
+    height: 499px;
+    width: 385px
+}
+.textcontainer {
+    flex: 1;
+    padding: 0 20px;
+    height: 499px;
+    width: 345px;
+}
+.textcontainer h1{
+    flex: 1;
+    padding-left:8%;
+    padding-top:28%;
+    font-size: 40px;
+    text-align: center;
+   
+}
+.textcontainer p{
+    padding-left: 8%;
+    padding-top: 8%;
+    font-size: 20px;
+   
+}
+.textcontainer img{
+    height: 50px;
+    margin-bottom: 1%;
+}
 
-display: flex;
-gap:20px;
+.search{
+    margin-top: 14px;
+    margin-bottom: 14px;
+    margin-right: 178px;
+    margin-left: 178px;
+}
 
-}*/
+.search_box{
+    border: solid rgb(141, 135, 135);
+    border-radius: 4px;
+    height: 35px;
+    width: 90%;
+    margin-right: 17px;
+}
+
