@@ -10,8 +10,8 @@
   }
 nav{
     margin-top: 8px;
-    margin-right: 177px;
-    margin-left: 177px;
+    margin-right: 50px;
+    margin-left: 50px;
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -36,24 +36,24 @@ nav ul li{
 }
 .card {
     margin-top: 8px;
-    margin-right: 177px;
-    margin-left: 177px;
+    /* margin-right: 50px; */
+    margin-left: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #ddd;
     padding: 20px;
-    width: 1085px;
-    height: 499px;
+    width: 1259px;
+    height: 550px;
 }
 .imagecontainer{
-    flex: 1;
+    flex: 2;
     
 }
 .image {
-    width: 700px;
+    width: 850px;
     /* height: auto; */
-    height: 499px;
+    height: 550px;
 }
 .image1 {
     height: 499px;
@@ -62,8 +62,8 @@ nav ul li{
 .textcontainer {
     flex: 1;
     padding: 0 20px;
-    height: 499px;
-    width: 345px;
+    height: 550px;
+    width: 360px;
 }
 .textcontainer h1{
     flex: 1;
@@ -98,4 +98,3 @@ nav ul li{
     width: 90%;
     margin-right: 17px;
 }
-

@@ -51,10 +51,7 @@ function Homepage() {
   const currentImage = imageInfo[currentImageIndex];
   return (
     <>
-      <div className={styles.search}>
-       <input type="text"  placeholder="  Search...for the recepie"  className={styles.search_box}/>
-      <button type="submit" className={styles.red}>Search</button>
-      </div>
+      
       <div className={styles.card}>
         <div className={styles.imagecontainer}>
           <img
