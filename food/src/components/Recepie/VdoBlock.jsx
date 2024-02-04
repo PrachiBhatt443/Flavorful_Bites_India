@@ -16,8 +16,7 @@ const vdoInfo = [{
                  7. Serve hot with your favorite side dish or curry.<br>`,
         link: 'https://youtu.be/skPzG_ZMnyU?feature=shared',
         backgroundColor: 'lightblue',
-    },
-    {   src: "https://youtu.be/skPzG_ZMnyU?feature=shared",
+    },{   src: "https://youtu.be/tEtQeMWxVHI?feature=shared",
         name: 'Spicy Pav Bhaji Delight',
         ingredient:`- 4 large potatoes, boiled and mashed
                     - 1 cup cauliflower, finely chopped
@@ -34,11 +33,10 @@ const vdoInfo = [{
                   Using a potato masher, mash the vegetables until you get a thick, chunky consistency.
                   Toast pav buns on a hot griddle with a generous amount of butter until they turn golden brown.
                   Serve the hot bhaji with buttered pav buns, chopped onions, and a squeeze of lemon juice.`,
-        link: 'https://youtu.be/skPzG_ZMnyU?feature=shared',
+        link: 'https://youtu.be/tEtQeMWxVHI?feature=shared',
         backgroundColor: '#eb8d29e7',
-    },
-    {
-        src: "https://youtu.be/skPzG_ZMnyU?feature=shared",
+    },{
+        src: "https://youtu.be/3vRshidqBLY?feature=shared",
         name: 'Mighty Cheese Cake',
         ingredient:`- 2 cups crushed graham crackers
                     - 1/2 cup melted butter
@@ -54,11 +52,10 @@ const vdoInfo = [{
                   Bake in the preheated oven for 40-45 minutes or until the center is almost set.
                   Allow the cheesecake to cool completely, then refrigerate for at least 4 hours or overnight.
                   Serve chilled, optionally topped with whipped cream or fruit compote.`,
-        link: 'https://youtu.be/skPzG_ZMnyU?feature=shared',
+        link: 'https://youtu.be/3vRshidqBLY?feature=shared',
         backgroundColor: 'lightpink',
-    },
-    {
-        src: "https://youtu.be/skPzG_ZMnyU?feature=shared",
+    },{
+        src: "https://youtu.be/_q5GKCNZcHI?feature=shared",
         name: 'Homemade Burger Bliss',
         ingredient:`- 1 lb ground beef
                     - Salt (to taste)
@@ -75,22 +72,21 @@ const vdoInfo = [{
                   Toast burger buns on the grill or skillet until lightly golden.
                   Assemble the burgers by placing lettuce, tomato slices, cooked patties, cheese slices, and any desired condiments (such as ketchup, mustard, or mayonnaise) on the toasted buns.
                   Serve hot with fries or your favorite side dish.`,
-        link: 'https://youtu.be/skPzG_ZMnyU?feature=shared',
+        link: 'https://youtu.be/_q5GKCNZcHI?feature=shared',
         backgroundColor: '#51361ae7',
     }
-      
     // Add more objects for additional images
   ];
 const VdoBlock = ({ Index }) => {
     const video = vdoInfo[Index];
   return (
     <div>
-        <div key={Index} className={s.card}>
-            <div className={s.vdoContainer}>
+        <div key={Index} className={s?.card}>
+            <div className={s?.vdoContainer}>
                 <iframe controls 
                 width="100%" height="100%" 
                 top='0'
-                src={`https://www.youtube.com/embed/${video.link.split('/').pop().split('?')[0]}`}>
+                src={`https://www.youtube.com/embed/${video?.link.split('/').pop().split('?')[0]}`}>
                     {/* <source src={video.src} type="video/mp4" />
                     Your browser does not support the video tag. */}
                 </iframe>
@@ -98,18 +94,17 @@ const VdoBlock = ({ Index }) => {
                     yield prep time cook
                 </div>
             </div>
-            <div className={s.recepie} style={{ backgroundColor: video.backgroundColor }}>
-                <h1>{video.name}</h1>
+            <div className={s.recepie} style={{ backgroundColor: video?.backgroundColor }}>
+                <h1>{video?.name}</h1>
                 <h2>INGRIDIENTS</h2> 
-                <div dangerouslySetInnerHTML={{ __html: video.ingredient }} />
+                <div dangerouslySetInnerHTML={{ __html: video?.ingredient }} />
             </div>
          </div>
-        <div className={s.card}>
-            <div className={s.vdoContainer}>
+        <div className={s?.card}>
+            <div className={s?.vdoContainer}>
                 <h1 style={{padding:'18px'}} >RECEPIE</h1>
-                <div style={{padding:'18px'}} dangerouslySetInnerHTML={{ __html: video.recepie }} />
+                <div style={{padding:'18px',fontSize:'24px'}} dangerouslySetInnerHTML={{ __html: video?.recepie }} />
             </div>
-        
       </div>
     </div>
   )
