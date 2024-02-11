@@ -1,0 +1,12 @@
+.box{
+    display: flex;
+    gap:28px;
+    margin-top: 8px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 1259px;
+}

@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import styles from './Navbar.module.css';
 import images from './importImages';
 import { Link } from 'react-router-dom';
-
+import Cat from './Cat';
+import Popular from './Popular'
 // Create an array of objects with image information
 const imageInfo = [
   {
@@ -63,11 +64,11 @@ function Homepage() {
         <div className={styles.textcontainer} style={{ backgroundColor: currentImage.backgroundColor }}>
           <h1>{currentImage.name}</h1>
           <p>{currentImage.description}</p>
-          {/* <Link to="/recepie" index={currentImageIndex}><img src="asc.png" alt="Icon" /></Link> */}
-          {/* Link to={`/recepie/${currentImageIndex}` */}
           <Link to={`/recepie/${currentImageIndex}`}><img src="asc.png" alt="Icon" /></Link>
         </div>
       </div>
+      <Cat/>
+      <Popular></Popular>
     </>
   );
 }
