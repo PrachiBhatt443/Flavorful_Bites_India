@@ -9,4 +9,3 @@ function importAll(r) {
   const images = importAll(require.context('./images/Card', false, /\.(jpg|jpeg|png)$/));
   
   export default images;
-  

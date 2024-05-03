@@ -11,8 +11,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/blogs" element={<Blogs/>} />
-          {/* <Route path="/recepie" element={<Recepie index={1}/>} /> */}
-          {/* <Route path="/recepie/:index" component={Recepie} /> */}
           <Route path="recepie">
             <Route path=":id" element={<Recepie/>}/>
           </Route>
