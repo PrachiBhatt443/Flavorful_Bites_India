@@ -111,15 +111,17 @@ nav ul li{
 .box {
     display: flex;
     gap:28px;
-    flex-wrap: wrap; /* Allow items to wrap to the next row */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap; 
+    justify-content: center; 
     align-items: center;
     font: 20px bold;
     color: rgb(27, 20, 11);
     width: 80%; 
     margin-left: 9%;
     padding: 20px;
-    /* Adjust the width of the container */
-    /* margin: 0 auto; /* Center the container */
-    /* padding: 20px; Add padding around the container  */
 }
+.navlink {
+    color: rgb(91, 91, 172); 
+    text-decoration: none;
+    font: 24px bold;
+  }

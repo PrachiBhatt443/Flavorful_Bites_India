@@ -1,24 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 import { FaSearch } from "react-icons/fa";
-
+import cookingImage from '../../img/cooking1.png';
 function Navbar() {
   const [visible, makeVisible] = useState(false);
   const toggleVisibility = () => {
     makeVisible(!visible);
   };
   return (
+    
       <>
         <nav>
             <div>
-              <img className={styles.logo} src='./img/cooking1.png' alt="Logo" />
+              <img src={cookingImage} className={styles.logo} alt="Cooking" />
             </div>
             <ul>
-              <li><Link to='/'>Homepage</Link></li>
-              <li><Link to={`/recepie/-1`}>Recipe Page</Link></li>
-              <li><Link to="/blogs">Blogs</Link></li>
-              <li><Link to="#">Buy</Link></li>
+              <li><Link to='/' className={styles.navlink}>Homepage</Link></li>
+              <li><Link to={`/recepie/-1`} className={styles.navlink}>Recipe Page</Link></li>
+              <li><Link to="/blogs" className={styles.navlink}>Blogs</Link></li>
+              <li><Link to="#" className={styles.navlink}>Buy</Link></li>
+              
             </ul>
             <div>
               <FaSearch onClick={toggleVisibility}>S</FaSearch>
