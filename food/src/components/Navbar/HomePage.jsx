@@ -39,7 +39,6 @@ const imageInfo = [
 
 function Homepage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
@@ -52,7 +51,6 @@ function Homepage() {
   const currentImage = imageInfo[currentImageIndex];
   return (
     <>
-      
       <div className={styles.card}>
         <div className={styles.imagecontainer}>
           <img
@@ -64,7 +62,8 @@ function Homepage() {
         <div className={styles.textcontainer} style={{ backgroundColor: currentImage.backgroundColor }}>
           <h1>{currentImage.name}</h1>
           <p>{currentImage.description}</p>
-          <Link to={`/recepie/${currentImageIndex}`}><img src="asc.png" alt="Icon" /></Link>
+          <Link to={`/recepie/${currentImageIndex}`}>
+            <img src="asc.png" alt="Icon" /></Link>
         </div>
       </div>
       <Cat/>

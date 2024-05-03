@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './Blogs.module.css';
+import blogImg  from '../../img/burg.jpg'
 
 function Blogs() {
   const imageInfo = [
     {
-      src: '/img/blog/burg.jpg',
+      src: {blogImg},
       name: 'Northern Cuisine',
       content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit exercitationem temporibus, blanditiis ratione architecto repudiandae totam debitis at cumque illo impedit. Nam unde facere eveniet quasi ipsam itaque a distinctio impedit quas blanditiis fugiat quod commodi voluptas quos doloremque, enim delectus! Minima doloremque corporis odio nostrum laudantium ratione natus? Obcaecati, fuga tempore voluptate est error, maxime nobis mollitia et adipisci perferendis in qui placeat praesentium iste illum aliquid id accusantium a consequuntur perspiciatis cum totam. Error quod tempora corporis et illo deleniti repudiandae nihil facilis, ducimus cupiditate sed veritatis vero quis laborum. Vel atque commodi blanditiis dolore cum maiores omnis consequuntur quam exercitationem sit. Necessitatibus cumque at nisi aperiam. Consequuntur tempora earum a voluptatibus. Quisquam velit ducimus, iure aliquid error, obcaecati asperiores ullam sint porro impedit in hic voluptate nemo itaque placeat ut quis quia sed ipsam! Ut quaerat molestiae odit aliquam inventore cumque quod eveniet cupiditate magni fugit at iusto molestias t, minima esse aliquid omnis provident ipsum, deserunt repudiandae amet fuga sit illo sapiente eum nostrum. Distinctio",
       link: 'https://example.com/image1',
@@ -32,7 +33,7 @@ function Blogs() {
       backgroundColor:' #51361ae7',
     },
     {
-        src: '/img/blog/burg.jpg', // Use the second image from your imported '/img/blog/burg.jpg'
+        src: 'burg.jpg', // Use the second image from your imported '/img/blog/burg.jpg'
         name: ' Rajasthani Cuisine',
         content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit exercitationem temporibus, blanditiis ratione architecto repudiandae totam debitis at cumque illo impedit. Nam unde facere eveniet quasi ipsam itaque a distinctio impedit quas blanditiis fugiat quod commodi voluptas quos doloremque, enim delectus! Minima doloremque corporis odio nostrum laudantium ratione natus? Obcaecati, fuga tempore voluptate est error, maxime nobis mollitia et adipisci perferendis in qui placeat praesentium iste illum aliquid id accusantium a consequuntur perspiciatis cum totam. Error quod tempora corporis et illo deleniti repudiandae nihil facilis, ducimus cupiditate sed veritatis vero quis laborum. Vel atque commodi blanditiis dolore cum maiores omnis consequuntur quam exercitationem sit. Necessitatibus cumque at nisi aperiam. Consequuntur tempora earum a voluptatibus. Quisquam velit ducimus, iure aliquid error, obcaecati asperiores ullam sint porro impedit in hic voluptate nemo itaque placeat ut quis quia sed ipsam! Ut quaerat molestiae odit aliquam inventore cumque quod eveniet cupiditate magni fugit at iusto molestias t, minima esse aliquid omnis provident ipsum, deserunt repudiandae amet fuga sit illo sapiente eum nostrum. Distinctio",
         link: 'https://example.com/image4',
@@ -58,21 +59,14 @@ function Blogs() {
         content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit exercitationem temporibus, blanditiis ratione architecto repudiandae totam debitis at cumque illo impedit. Nam unde facere eveniet quasi ipsam itaque a distinctio impedit quas blanditiis fugiat quod commodi voluptas quos doloremque, enim delectus! Minima doloremque corporis odio nostrum laudantium ratione natus? Obcaecati, fuga tempore voluptate est error, maxime nobis mollitia et adipisci perferendis in qui placeat praesentium iste illum aliquid id accusantium a consequuntur perspiciatis cum totam. Error quod tempora corporis et illo deleniti repudiandae nihil facilis, ducimus cupiditate sed veritatis vero quis laborum. Vel atque commodi blanditiis dolore cum maiores omnis consequuntur quam exercitationem sit. Necessitatibus cumque at nisi aperiam. Consequuntur tempora earum a voluptatibus. Quisquam velit ducimus, iure aliquid error, obcaecati asperiores ullam sint porro impedit in hic voluptate nemo itaque placeat ut quis quia sed ipsam! Ut quaerat molestiae odit aliquam inventore cumque quod eveniet cupiditate magni fugit at iusto molestias t, minima esse aliquid omnis provident ipsum, deserunt repudiandae amet fuga sit illo sapiente eum nostrum. Distinctio ",
         link: 'https://example.com/image4',
         backgroundColor:' #51361ae7',
-      }
-      
+      } 
   ];
-
-
-
-
-
-
   return (
     <div>
       {imageInfo.map((info, index) => (
         <div className= {styles.box}>
           <img key={index}
-          src={info.src}
+          src={blogImg}
           alt={info.name}
           style={{height:"260px",width:"260px"}}
           />
