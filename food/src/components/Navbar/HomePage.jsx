@@ -59,7 +59,7 @@ function Homepage() {
             alt={`Image ${currentImageIndex}`}
           />
         </div>
-        <div className={styles.textcontainer} style={{ backgroundColor: currentImage.backgroundColor }}>
+        <div className={styles.textcontainer} style={{ backgroundColor: currentImage.backgroundColor ,'margin-top':'1%'}}>
           <h1>{currentImage.name}</h1>
           <p>{currentImage.description}</p>
           <Link to={`/recepie/${currentImageIndex}`}>

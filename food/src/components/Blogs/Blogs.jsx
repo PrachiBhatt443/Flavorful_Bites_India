@@ -12,7 +12,7 @@ function Blogs() {
       backgroundColor: 'lightblue',
     },
     {
-      src: '/img/blog/burg.jpg', 
+      src: {blogImg}, 
       name: 'North East Cuisine',
       content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit exercitationem temporibus, blanditiis ratione architecto repudiandae totam debitis at cumque illo impedit. Nam unde facere eveniet quasi ipsam itaque a distinctio impedit quas blanditiis fugiat quod commodi voluptas quos doloremque, enim delectus! Minima doloremque corporis odio nostrum laudantium ratione natus? Obcaecati, fuga tempore voluptate est error, maxime nobis mollitia et adipisci perferendis in qui placeat praesentium iste illum aliquid id accusantium a consequuntur perspiciatis cum totam. Error quod tempora corporis et illo deleniti repudiandae nihil facilis, ducimus cupiditate sed veritatis vero quis laborum. Vel atque commodi blanditiis dolore cum maiores omnis consequuntur quam exercitationem sit. Necessitatibus cumque at nisi aperiam. Consequuntur tempora earum a voluptatibus. Quisquam velit ducimus, iure aliquid error, obcaecati asperiores ullam sint porro impedit in hic voluptate nemo itaque placeat ut quis quia sed ipsam! Ut quaerat molestiae odit aliquam inventore cumque quod eveniet cupiditate magni fugit at iusto molestias t, minima esse aliquid omnis provident ipsum, deserunt repudiandae amet fuga sit illo sapiente eum nostrum. Distinctio",
       link: 'https://example.com/image2',
