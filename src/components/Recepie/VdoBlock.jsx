@@ -86,6 +86,7 @@ const VdoBlock = ({ Index }) => {
                 <iframe controls 
                 width="100%" height="100%" 
                 top='0'
+                title={video.name}
                 src={`https://www.youtube.com/embed/${video?.link.split('/').pop().split('?')[0]}`}>
                     {/* <source src={video.src} type="video/mp4" />
                     Your browser does not support the video tag. */}

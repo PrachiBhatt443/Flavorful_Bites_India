@@ -1,15 +1,14 @@
 import Navbar from "./components/Navbar/Navbar";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Blogs from "./components/Blogs/Blogs";
 import Homepage from "./components/Navbar/HomePage";
 import Recepie from "./components/Recepie/Recepie";
 import Article from "./components/Blogs/Article";
 function App() {
   return ( 
-    <Router>
+    // <Router>
       <div className="App">
         <Navbar/>
-        {/* <Homepage/> */}
         <Routes>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/blogs" element={<Blogs/>} />
@@ -19,7 +18,7 @@ function App() {
           <Route path="/article" element={<Article/>}/>
         </Routes>
       </div>
-    </Router>
+    // </Router>
   );
 }
 export default App;
